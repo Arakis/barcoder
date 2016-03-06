@@ -1,4 +1,8 @@
 # barcoder
+
+This library and command line application generates code128 barcodes, the output format is a SVG-File.
+
+Usage of the library:
 ```
 var input = "abc123";
 var bc = new Barcode128(input);
@@ -6,7 +10,7 @@ var svg = bc.generateSvg();
 Console.WriteLine(svg);
 ```
 
-command line example:
+Command line example:
 
 ```
 barcoder-cli abc123 > barcode.svg
